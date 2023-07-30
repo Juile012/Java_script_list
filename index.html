@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style></style>
+    </head>
+
+    <body>
+        <div id="parent">
+            <ul>
+                <li>첫 번째 자식</li>
+                <li>두 번째 자식</li>
+                <li>세 번째 자식</li>
+                <li>
+                    네 번째 자식
+                    <span id="myspan">(막내)</span>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var span = document.getElemetById("mySpan");
+
+            var added = document.creatElement("span");
+            added.textContent = "(첫째)";
+
+            var firstLi =
+            span. parentElement.previousElementSibling.previousElementsibling.previousElementSibling;
+            firstLi.appendChild(added);
+        </script>
+    </body>
+</html>
